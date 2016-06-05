@@ -22,4 +22,10 @@ class Application @Inject()(pricingService: PricingService, consulDisco: ConsulD
       }
   }
 
+  def health = Action {
+    request =>
+      println(s"..................... ${request.body}")
+      Ok
+  }
+
 }

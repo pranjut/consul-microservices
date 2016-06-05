@@ -22,4 +22,10 @@ class Application @Inject()(mailService: MailService, consulDisco: ConsulDiscove
       }
   }
 
+  def health = Action {
+    request =>
+      println(s"..................... ${request.body}")
+      Ok
+  }
+
 }

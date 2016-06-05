@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160605153236"/>
+		date="20160605222506"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-cache_2.11">
 			<revision name="2.4.0" status="release" pubdate="20150527011432" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="67">
@@ -103,7 +103,7 @@
 			</revision>
 		</module>
 		<module organisation="com.knoldus" name="common_2.11">
-			<revision name="0.1-SNAPSHOT" status="integration" pubdate="20160605153236" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.1-SNAPSHOT" status="integration" pubdate="20160605222445" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="com.knoldus" name="service-c_2.11" conf="test, compile, runtime" rev="0.1-SNAPSHOT" rev-constraint-default="0.1-SNAPSHOT" rev-constraint-dynamic="0.1-SNAPSHOT" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>

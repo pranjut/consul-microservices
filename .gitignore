@@ -56,4 +56,10 @@ service-b/.settings
 service-b/target/
 service-b/logs/
 
+service-c/.classpath
+service-c/.project
+service-c/.settings
+service-c/target/
+service-c/logs/
+
 

@@ -24,7 +24,8 @@ class ConsulDiscovery {
   def registerService(myserviceId: String = "myServiceId",consulPort: Int = 8500, myServicePort: Int = 9000) = {
     val myConsul = new Consul(inetAddr, consulPort)
     import myConsul.v1._
-    val myService: LocalService = agent.service.LocalService(ServiceId(myserviceId), ServiceType("myTypeOfService"), Set(ServiceTag("MyTag")), Some(myServicePort) , None /*Some(myServiceCheck)*/)
+    val myServiceCheck = agent.service.httpCheck(s"http://localhost:$myServicePort/health","15s")
+    val myService: LocalService = agent.service.LocalService(ServiceId(myserviceId), ServiceType("myTypeOfService"), Set(ServiceTag("MyTag")), Some(myServicePort) , Some(myServiceCheck))
     agent.service.register(myService).recover {
       case NonFatal(ex) =>
         ex.printStackTrace()

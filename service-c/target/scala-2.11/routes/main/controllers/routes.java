@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/pranjut/workspace/throwaway/consul-microservices/service-c/conf/routes
-// @DATE:Sun Jun 05 16:55:49 IST 2016
+// @DATE:Sun Jun 05 22:29:15 IST 2016
 
 package controllers;
 

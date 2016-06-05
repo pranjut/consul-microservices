@@ -5,7 +5,9 @@
 # Home page
 GET        /                    controllers.Application.index
 
-GET        /sendPrice              controllers.Application.sendPricing
+GET        /sendPrice           controllers.Application.sendPricing
+
+GET        /health              controllers.Application.health
 
 
 # Map static resources from the /public folder to the /assets URL path
